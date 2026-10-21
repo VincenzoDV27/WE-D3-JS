@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <h1 id="titolo">Le miei tasks</h1>
+
+    <div class="aggiunta">
+      <form>
+        <input
+          id="nuovo-task"
+          placeholder="Cosa devi fare?"
+          autocomplete="off"
+        />
+        <label for="lvlTask">Livello task</label>
+        <select name="lvlTask" id="lvlTask">
+          <option value="alta">Alta</option>
+          <option value="media">Media</option>
+          <option value="bassa">Bassa</option>
+        </select>
+        <button type="submit" id="bottone-aggiungi">Aggiungi</button>
+        <br /><br />
+        <button type="button" id="all" value="all" hover>Tutti</button>
+        <button type="button" id="active" value="active">Attivi</button>
+        <button type="button" id="done" value="done">Completati</button>
+        <p id="errore-task"></p>
+      </form>
+    </div>
+
+    <ul id="lista-task"></ul>
+
+    <p>Totale: <span id="contatore">0</span></p>
+  </body>
+</html>
